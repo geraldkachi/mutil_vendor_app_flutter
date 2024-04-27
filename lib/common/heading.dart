@@ -25,7 +25,7 @@ class Heading extends StatelessWidget {
             onTap: onTop,
             child: Icon(
               AntDesign.appstore1,
-              color: kDark,
+              color: kSecondary,
               size: 20.sp ,
             ),
           )

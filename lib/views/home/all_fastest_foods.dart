@@ -8,11 +8,11 @@ class AllFastestFoods extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
        appBar: AppBar(
-        elevation: 0,
+        elevation: 0.3,
         title:  ReusableText(text: "AllFastestFoods", 
         style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600)),
       ),
-      body: Center(child: Text("AllFastestFoods"),),
+      body: const Center(child: Text("AllFastestFoods"),),
     );
   }
 }

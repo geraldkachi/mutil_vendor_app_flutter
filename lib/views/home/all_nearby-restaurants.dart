@@ -8,7 +8,7 @@ class AllNearbyRestaurants extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
        appBar: AppBar(
-        elevation: 0,
+        elevation: 0.3,
         title:  ReusableText(text: "All Nearby Restaurants", 
         style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600)),
       ),

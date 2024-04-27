@@ -46,7 +46,7 @@ List<dynamic> categories = [
   },
 ];
 
-const restaurants = [
+List<dynamic> restaurants = [
   {
     "_id": "1",
     "title": "Pizza",
