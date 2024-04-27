@@ -9,11 +9,11 @@ class CategoryList  extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80.h,
+      height: 75.h,
       padding: EdgeInsets.only(left: 12.w, top: 10.h),
       child: ListView(
         scrollDirection: Axis.horizontal,
-        children: List.generate(categories .length, (index) {
+        children: List.generate(categories.length, (index) {
           var category = categories[index];
           return CategoryWidget(category: category);
         }),

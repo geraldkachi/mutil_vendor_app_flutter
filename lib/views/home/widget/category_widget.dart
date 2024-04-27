@@ -14,13 +14,13 @@ class CategoryWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      final controller = Get.put(CategoryController());
-    return GestureDetector(
+    return GestureDetector( 
        onTap: () {
         if(controller.categoryValue == category['_id']) {
           controller.updateCategory = '';
           controller.updateTitle = '';
         }  else if(category['title'] == 'More') {
-            Get.to(() => const AllCategory(),
+            Get.to(() => const AllCategories(),
             transition: Transition.fadeIn,
             duration: const Duration(milliseconds: 900)
             );
