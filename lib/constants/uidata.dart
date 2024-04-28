@@ -51,10 +51,10 @@ List<dynamic> restaurants = [
     "_id": "1",
     "title": "Pizza",
     "time": "6:00am - 9:00pm",
-    "imageUrl": "https://picsum.photos/200/300",
-    "owner": "werfqwerwerq",
+    "imageUrl": "https://fastly.picsum.photos/id/242/200/300.jpg?hmac=_v7qaiV_fwDB3NP9lpirq7rMvS10u8lHjqMYNmmXya4",
+    "owner": "Lord Gerald kachi",
     "code": "1213",
-    "logoUrl": "https://picsum.photos/200/300",
+    "logoUrl": "https://fastly.picsum.photos/id/564/200/300.jpg?hmac=GML84ZsOUsd0_XLIMleR9RvRFT8-pojH0AwU7tRHoCg",
     "rating": 5,
     "ratingCount": "150",
     "coords": {

@@ -9,6 +9,8 @@ import 'package:multi_vendor_food/views/home/all_fastest_foods.dart';
 import 'package:multi_vendor_food/views/home/all_nearby-restaurants.dart';
 import 'package:multi_vendor_food/views/home/recommendations.dart';
 import 'package:multi_vendor_food/views/home/widget/category_list.dart';
+import 'package:multi_vendor_food/views/home/widget/food_list.dart';
+import 'package:multi_vendor_food/views/home/widget/nearby_list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -32,12 +34,14 @@ class HomePage extends StatelessWidget {
               duration: const Duration(milliseconds: 900)
               );
             }),
+            const NearbyRestaurants(),
             Heading(text: "Try Something New ", onTop: () {
               Get.to(() => Recommendations(),
               transition: Transition.cupertino,
               duration: const Duration(milliseconds: 900)
               );
             }),
+            const FoodList(),
             Heading(text: "Food Closer to you", onTop: () {
               Get.to(() => AllFastestFoods(),
               transition: Transition.cupertino,
