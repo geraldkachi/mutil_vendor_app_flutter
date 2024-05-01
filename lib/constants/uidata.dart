@@ -73,8 +73,10 @@ List<Map<String, dynamic>> foods = [
   {
     "_id": "0",
     "title": "Tiramisu",
+    "time": "6:00am - 9:00pm",
     "foodTags": ["Italian", "Dessert", "Coffee", "Mascarphone", "Cocoa"],
     "foodType": ["Tiramisu"],
+    "imageUrl": "https://picsum.photos/200/300",
     "code": "1234",
     "isAvailable": true,
     "restaurant": "34523453543",

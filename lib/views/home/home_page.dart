@@ -1,6 +1,6 @@
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:multi_vendor_food/common/custom_appbar.dart';
 import 'package:multi_vendor_food/common/custom_container.dart';
 import 'package:multi_vendor_food/common/heading.dart';
@@ -48,6 +48,7 @@ class HomePage extends StatelessWidget {
               duration: const Duration(milliseconds: 900)
               );
             }),
+            const FoodList(),
           ],
         ))));
   }
