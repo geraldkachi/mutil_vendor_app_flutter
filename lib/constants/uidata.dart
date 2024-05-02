@@ -57,7 +57,7 @@ List<dynamic> restaurants = [
     "logoUrl": "https://fastly.picsum.photos/id/564/200/300.jpg?hmac=GML84ZsOUsd0_XLIMleR9RvRFT8-pojH0AwU7tRHoCg",
     "rating": 5,
     "ratingCount": "150",
-    "isOpen": true,
+    "isAvailable": true,
     "coords": {
       "id": "0",
       "latitude": 37.41235345,
@@ -78,7 +78,7 @@ List<dynamic> restaurants = [
     "logoUrl": "https://fastly.picsum.photos/id/564/200/300.jpg?hmac=GML84ZsOUsd0_XLIMleR9RvRFT8-pojH0AwU7tRHoCg",
     "rating": 5,
     "ratingCount": "150",
-    "isOpen": true,
+    "isAvailable": true,
     "coords": {
       "id": "0",
       "latitude": 37.41235345,
@@ -99,7 +99,7 @@ List<dynamic> restaurants = [
     "logoUrl": "https://fastly.picsum.photos/id/564/200/300.jpg?hmac=GML84ZsOUsd0_XLIMleR9RvRFT8-pojH0AwU7tRHoCg",
     "rating": 5,
     "ratingCount": "150",
-    "isOpen": false,
+    "isAvailable": false,
     "coords": {
       "id": "0",
       "latitude": 37.41235345,
@@ -120,7 +120,7 @@ List<dynamic> restaurants = [
     "logoUrl": "https://fastly.picsum.photos/id/564/200/300.jpg?hmac=GML84ZsOUsd0_XLIMleR9RvRFT8-pojH0AwU7tRHoCg",
     "rating": 5,
     "ratingCount": "150",
-    "isOpen": false,
+    "isAvailable": false,
     "coords": {
       "id": "0",
       "latitude": 37.41235345,
@@ -141,7 +141,7 @@ List<dynamic> restaurants = [
     "logoUrl": "https://fastly.picsum.photos/id/564/200/300.jpg?hmac=GML84ZsOUsd0_XLIMleR9RvRFT8-pojH0AwU7tRHoCg",
     "rating": 5,
     "ratingCount": "150",
-    "isOpen": true,
+    "isAvailable": true,
     "coords": {
       "id": "0",
       "latitude": 37.41235345,
@@ -167,7 +167,6 @@ List<Map<String, dynamic>> foods = [
     "restaurant": "34523453543",
     "rating": 4.9,
     "ratingCount": "150",
-    "isOpen": true,
     "description":
         "A classification Italian dessert made of layers of coffee-soaked ladyfinger",
     "price": 7.24,

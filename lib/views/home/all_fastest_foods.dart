@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:multi_vendor_food/common/appStyle.dart';
+import 'package:multi_vendor_food/common/background_container.dart';
 import 'package:multi_vendor_food/common/reusable_text.dart';
+import 'package:multi_vendor_food/constants/constants.dart';
+import 'package:multi_vendor_food/constants/uidata.dart';
+import 'package:multi_vendor_food/views/home/widget/food_tile.dart';
 
 class AllFastestFoods extends StatelessWidget {
   const AllFastestFoods({super.key});
@@ -7,12 +13,26 @@ class AllFastestFoods extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       backgroundColor: kSecondary,
        appBar: AppBar(
         elevation: 0.3,
-        title:  ReusableText(text: "AllFastestFoods", 
-        style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w600)),
+        backgroundColor: kSecondary,
+        title:  ReusableText(text: "Fastest Foods", 
+        style: appStyle(13, kGrey, FontWeight.w600)),
       ),
-      body: const Center(child: Text("AllFastestFoods"),),
+      body: BackgroundContainer(
+        color: Colors.white,
+        child: Padding(
+          padding: EdgeInsets.all(12.h),
+          child: ListView(
+            scrollDirection: Axis.vertical,
+            children: List.generate(foods.length, (i) {
+              var food = foods[i];
+              return FoodTile(food: food);
+            }),
+          ),
+        ),
+      ),
     );
   }
 }
