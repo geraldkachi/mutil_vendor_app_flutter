@@ -13,7 +13,13 @@ class Recommendations extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-         
+        backgroundColor: kSecondary,
+       appBar: AppBar(
+        elevation: 0.3,
+        backgroundColor: kSecondary,
+        title:  ReusableText(text: "Recommendations", 
+        style: appStyle(13, kGrey, FontWeight.w600)),
+      ),
       body: BackgroundContainer(
         color: Colors.white,
         child: Padding(
