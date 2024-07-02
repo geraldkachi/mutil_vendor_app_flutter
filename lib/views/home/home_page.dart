@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
         backgroundColor: kPrimary,
         appBar: PreferredSize(
           preferredSize: Size.fromHeight(130.h),
-          child: CustomAppBar(),
+          child: const CustomAppBar(),
         ),
         body: SafeArea(
             child: CustomContainer(
@@ -29,21 +29,21 @@ class HomePage extends StatelessWidget {
           children: [
             const CategoryList(),
             Heading(text: "Nearby Restaurant", onTop: () {
-              Get.to(() => AllNearbyRestaurants(),
+              Get.to(() => const AllNearbyRestaurants(),
               transition: Transition.cupertino,
               duration: const Duration(milliseconds: 900)
               );
             }),
             const NearbyRestaurants(),
             Heading(text: "Try Something New ", onTop: () {
-              Get.to(() => Recommendations(),
+              Get.to(() => const Recommendations(),
               transition: Transition.cupertino,
               duration: const Duration(milliseconds: 900)
               );
             }),
             const FoodList(),
             Heading(text: "Food Closer to you", onTop: () {
-              Get.to(() => AllFastestFoods(),
+              Get.to(() => const AllFastestFoods(),
               transition: Transition.cupertino,
               duration: const Duration(milliseconds: 900)
               );

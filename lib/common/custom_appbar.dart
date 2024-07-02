@@ -24,7 +24,7 @@ class CustomAppBar extends StatelessWidget {
                 CircleAvatar(
                   radius: 22.r,
                   backgroundColor: kSecondary,
-                  backgroundImage: const NetworkImage("https://picsum.photos/200/300"),
+                  backgroundImage: const NetworkImage("https://res.cloudinary.com/dl1vwgsob/image/upload/v1718998278/PHOTO-2024-04-01-18-22-56_g0s8tz.jpg"),
                 ),
                 Padding(
                   padding: EdgeInsets.only(bottom: 6.h, left: 8.w),
@@ -32,10 +32,10 @@ class CustomAppBar extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ReusableText(text: "Deliver To", style: TextStyle(fontSize: 13, color: kSecondary, fontWeight: FontWeight.w600),),
+                      ReusableText(text: "Deliver To", style: const TextStyle(fontSize: 13, color: kSecondary, fontWeight: FontWeight.w600),),
                       SizedBox(
                         width: width * 0.65,
-                        child: Text('16768 21st Ave N, Plymouth, MN55447', overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 11 ,color: kGreyLight, fontWeight: FontWeight.normal)),
+                        child: const Text('16768 21st Ave N, Plymouth, MN55447', overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 11 ,color: kGreyLight, fontWeight: FontWeight.normal)),
                       )
                     ],
                 ),
